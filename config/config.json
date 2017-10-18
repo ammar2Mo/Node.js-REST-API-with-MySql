@@ -1,0 +1,29 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "Advisors",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "fbAppId": "688061491216951",
+    "fbAppSecret": "1dbdcfed35318dbe03e7be836c20547d"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "Advisors",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "fbAppId": "688061491216951",
+    "fbAppSecret": "1dbdcfed35318dbe03e7be836c20547d"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "Advisors",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "fbAppId": "688061491216951",
+    "fbAppSecret": "1dbdcfed35318dbe03e7be836c20547d"
+  }
+}
