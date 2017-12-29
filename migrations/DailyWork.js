@@ -2,28 +2,30 @@
 
 module.exports = {
     up: function (queryInterface, Sequelize) {
-        return queryInterface.createTable('UserVerificationCo', {
-            userId: {
+        return queryInterface.createTable('dailyWork', {
+            id: {
                 type: Sequelize.UUID,
                 primaryKey: true,
                 allowNull: false
             },
-            code: {
-                type: Sequelize.STRING(4),
-                primaryKey: true,
+            employeeId: {
+                type: Sequelize.UUID,
                 allowNull: false
             },
-            sentTo: {
-                type: Sequelize.STRING(50),
+            date: {
+                type: Sequelize.DATEONLY
+            },
+            totalHours: {
+                type: Sequelize.INTEGER,
                 allowNull: false
             },
-            sentAt: {
-                type: Sequelize.STRING(30),
+            isHollyDay: {
+                type: Sequelize.BOOLEAN,
                 allowNull: false
             }
         })
     },
     down: function (queryInterface, Sequelize) {
-        return queryInterface.dropTable('UserVerificationCo')
+        return queryInterface.dropTable('dailyWork')
     }
 }

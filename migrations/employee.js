@@ -2,15 +2,19 @@
 
 module.exports = {
     up: function (queryInterface, Sequelize) {
-        return queryInterface.createTable('Advisor', {
+        return queryInterface.createTable('employee', {
             id: {
                 type: Sequelize.UUID,
                 primaryKey: true,
                 allowNull: false
             },
-            name: {
+            firstName: {
                 type: Sequelize.STRING(50),
-                allowNull: true
+                allowNull: false
+            },
+            lastName: {
+                type: Sequelize.STRING(50),
+                allowNull: false
             },
             email: {
                 type: Sequelize.STRING(50),
@@ -21,19 +25,14 @@ module.exports = {
                 }
 
             },
-            password: {
-                type: Sequelize.STRING(50),
-                allowNull: false,
-            },
-            experience: {
-                type: Sequelize.TEXT
-            },
-            UniversityDegree: {
-                type: Sequelize.TEXT
+            isActive: {
+                type: Sequelize.BOOLEAN,
+                defaultValue: true,
             }
+
         })
     },
     down: function (queryInterface, Sequelize) {
-        return queryInterface.dropTable('Advisor')
+        return queryInterface.dropTable('employee')
     }
 }
