@@ -34,3 +34,5 @@ $ sequelize db:seed:all
 $ npm run-script development
 ```
 
+###Please add employee manually in the db to start testing 
+
