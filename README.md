@@ -28,6 +28,7 @@ For dev environments...
 ```sh
 $ cd 
 $ npm install
+$ npm install sequelize cli -g
 $ sequelize db:migrate
 $ sequelize db:seed:all
 $ npm run-script development
