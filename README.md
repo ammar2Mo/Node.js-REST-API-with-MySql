@@ -4,9 +4,7 @@
 * [Restify] - As backbone for the Web API
 * [Sequelize] - For ORM database interaction
 * [Node-uuid] - For UUID generation
-* [Random-js] - For verification code generation
-* [Request-promise] - For Social Network verification
-* [Sendmail] - SMTP-less email sending
+* [moment]
 
 
 ### Installation
@@ -30,7 +28,6 @@ $ cd
 $ npm install
 $ npm install sequelize cli -g
 $ sequelize db:migrate
-$ sequelize db:seed:all
 $ npm run-script development
 ```
 
